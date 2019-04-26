@@ -1,0 +1,107 @@
+apply plugin: 'com.android.library'
+apply plugin: 'realm-android'
+
+
+
+android {
+    compileSdkVersion cfgs.compileSdkVersion
+
+
+
+    defaultConfig {
+        minSdkVersion cfgs.minSdkVersion
+        targetSdkVersion cfgs.targetSdkVersion
+        versionCode cfgs.versionCode
+        versionName cfgs.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi-v7a' //, 'x86', 'armeabi', 'x86_64', 'arm64-v8a'
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:${cfgs.androidSupportVersion}"
+    implementation "com.android.support.constraint:constraint-layout:${cfgs.constraintlayout}"
+    testImplementation "junit:junit:${cfgs.junit}"
+    androidTestImplementation "com.android.support.test:runner:${cfgs.runner}"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:${cfgs.espressoCore}"
+
+    api project(':acface')
+    api project(':zkfveins')
+    api project(':adapter')
+    api project(':baidutts')
+    api project(':jxfvlibrary')
+
+
+
+
+    api "com.scwang.smartrefresh:SmartRefreshLayout:${cfgs.SmartRefreshLayout}"
+
+
+    /*时间选择*/
+    api "com.wdullaer:materialdatetimepicker:${cfgs.materialdatetimepicker}"
+    /*网页加载*/
+    api "com.tencent.sonic:sdk:${cfgs.sonic}"
+    /* 响应式框架*/
+    api "com.squareup.okhttp3:okhttp:${cfgs.okhttp}"
+    api "com.squareup.okhttp3:logging-interceptor:${cfgs.okhttp}"
+    api "com.squareup.retrofit2:retrofit:${cfgs.retrofit}"
+    api "com.squareup.retrofit2:converter-gson:${cfgs.retrofit}"
+    api "com.squareup.retrofit2:adapter-rxjava2:${cfgs.retrofit}"
+    /*rxandroid*/
+    api "io.reactivex.rxjava2:rxandroid:${cfgs.rxandroid}"
+    /*material-dialogs*/
+    api "com.afollestad.material-dialogs:commons:${cfgs.commons}"
+    /*吐司*/
+    api "com.github.GrenderG:Toasty:${cfgs.Toasty}"
+    /*权限管理*/
+    api "com.tbruyelle.rxpermissions2:rxpermissions:${cfgs.rxpermissions}"
+    /*内存泄漏检查*/
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:${cfgs.leakcanary_android}"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${cfgs.leakcanary_android}"
+    /*腾讯bugly*/
+    //implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    api 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    api 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    /*圆形头像*/
+    api "de.hdodenhof:circleimageview:${cfgs.circleimageview}"
+
+    /*注解框架*/
+    implementation "com.jakewharton:butterknife:${cfgs.butterknife}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${cfgs.butterknife}"
+
+    /*日志打印*/
+    api "com.orhanobut:logger:${cfgs.logger}"
+
+    /*时间选择*/
+    api "com.wdullaer:materialdatetimepicker:${cfgs.materialdatetimepicker}"
+
+    /*图片加载*/
+    api "com.github.bumptech.glide:glide:${cfgs.glide}"
+    annotationProcessor "com.github.bumptech.glide:compiler:${cfgs.glide}"
+
+    api 'com.guo.android_extend:android-extend:1.0.5'
+    /*消息推送*/
+    api "com.rabbitmq:amqp-client:${cfgs.amqp_client}"
+
+    /*fastJson*/
+    implementation 'com.alibaba:fastjson:1.1.70.android'
+
+
+    implementation "com.android.support:multidex:${cfgs.multidex}"
+
+}

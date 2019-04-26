@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_09c491">
+
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_56"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_14"
+            android:text="@string/setting"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_20" />
+
+        <ImageView
+            android:layout_toLeftOf="@+id/right"
+            android:id="@+id/title_right_iv"
+            android:layout_width="@dimen/space_36"
+            android:layout_height="@dimen/space_36"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_setting"
+            android:scaleType="centerInside"
+            android:visibility="visible"
+            />
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_marginLeft="@dimen/space_24"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_30"
+            android:src="@mipmap/icon_back"
+            android:scaleType="centerInside"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+
+        <TextView
+            android:id="@+id/left_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/space_24"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@+id/left"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_20" />
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <com.gykj.cashier.widget.HeaderLayoutView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/cashier_search_layout"
+        android:layout_below="@+id/header"
+        android:layout_width="@dimen/space_345"
+        android:layout_height="@dimen/space_38"
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_24"
+        android:background="@drawable/ic_seach_layout_background">
+
+        <ImageView
+            android:id="@+id/cashier_search_iv"
+            android:layout_width="@dimen/space_24"
+            android:layout_height="@dimen/space_24"
+            android:src="@mipmap/icon_search"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_15"/>
+
+
+        <EditText
+            android:id="@+id/cashier_search_et"
+            android:background="@null"
+            android:layout_toRightOf="@+id/cashier_search_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_b1b1b1"
+            android:hint="@string/cashier_hint_search"
+            android:textSize="@dimen/space_18" />
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="match_parent"
+            android:text="@string/search"
+            android:background="@drawable/ic_save_background"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_20"
+            android:gravity="center"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/edit_scan_all_tv"
+        android:layout_width="@dimen/space_120"
+        android:layout_height="@dimen/space_38"
+        android:layout_below="@+id/header"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_30"
+        android:background="@drawable/ic_save_background"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/edit_add_tv"
+        android:text="@string/add_scan_all"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/space_20" />
+
+
+
+    <LinearLayout
+        android:id="@+id/cashier_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:orientation="horizontal"
+        android:background="@color/color_f2f2f2"
+        android:layout_below="@+id/cashier_search_layout"
+        android:layout_marginLeft="@dimen/space_24"
+        android:layout_marginRight="@dimen/space_24"
+        android:layout_marginTop="@dimen/space_24">
+
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_180"
+            android:text="@string/cashier_title_bar_code"/>
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_348"
+            android:text="@string/cashier_title_name"/>
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_126"
+            android:text="@string/inventory_storage"/>
+
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_124"
+            android:text="@string/inventory_difference_storage"/>
+
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_130"
+            android:text="@string/inventory_after_storage"/>
+
+
+    </LinearLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/invent_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space_24"
+        android:layout_marginLeft="@dimen/space_24"
+        android:layout_below="@+id/cashier_title_layout"
+        android:layout_above="@+id/cashier_buttom_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/invent_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:id="@+id/inventory_total_layout"
+        android:layout_below="@+id/invent_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/space_380">
+
+        <TextView
+            style="@style/lay_goods_title_textview_style"
+            android:text="@string/inventory_total"/>
+
+        <TextView
+            android:id="@+id/inventory_total_tv"
+            style="@style/lay_goods_title_textview_style"
+            android:textColor="@color/color_04b685"
+            android:text="0"/>
+
+        <TextView
+            style="@style/lay_goods_title_textview_style"
+            android:layout_marginLeft="@dimen/space_20"
+            android:text="@string/inventory_already"/>
+
+        <TextView
+            android:id="@+id/inventory_already_tv"
+            style="@style/lay_goods_title_textview_style"
+            android:textColor="@color/color_0183f1"
+            android:text="0"/>
+
+        <TextView
+            style="@style/lay_goods_title_textview_style"
+            android:layout_marginLeft="@dimen/space_20"
+            android:text="@string/inventory_difference"/>
+
+        <TextView
+            android:id="@+id/inventory_difference_tv"
+            style="@style/lay_goods_title_textview_style"
+            android:textColor="@color/color_f80000"
+            android:text="0"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/invent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_60"
+    android:orientation="horizontal"
+    android:background="@color/color_ffffff">
+
+
+    <TextView
+        android:id="@+id/finance_order_code_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_240" />
+
+
+    <TextView
+        android:id="@+id/finance_goods_num_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_160" />
+
+
+    <TextView
+        android:id="@+id/finance_goods_money_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_160" />
+
+    <TextView
+        android:id="@+id/finance_status_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_155" />
+
+    <TextView
+        android:id="@+id/finance_order_time_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_198" />
+
+
+
+
+
+</com.lanzhu.autolayout.AutoLinearLayout>

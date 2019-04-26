@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:gravity="center_horizontal">
+
+
+    <com.gykj.cashier.widget.HeaderLayoutView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    
+    
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_100"
+        android:layout_width="@dimen/space_380"
+        android:layout_height="@dimen/space_50">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/modify_origin_password"
+            android:textColor="@color/color_2d2d2d"
+            android:textSize="@dimen/space_22"/>
+        
+        
+        <EditText
+            android:id="@+id/modify_origin_pass_et"
+            android:layout_width="@dimen/space_280"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/color_2d2d2d"
+            android:background="@drawable/ic_cashier_textview_background"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_width="@dimen/space_380"
+        android:layout_height="@dimen/space_50">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/modify_new_password"
+            android:textColor="@color/color_2d2d2d"
+            android:textSize="@dimen/space_22"/>
+
+
+        <EditText
+            android:id="@+id/modify_new_pass_et"
+            android:layout_width="@dimen/space_280"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/color_2d2d2d"
+            android:background="@drawable/ic_cashier_textview_background"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_45"
+        android:layout_width="@dimen/space_270"
+        android:layout_height="@dimen/space_50">
+        
+        
+        
+        <TextView
+            android:id="@+id/modify_sure_tv"
+            android:layout_width="@dimen/space_110"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_22"
+            android:gravity="center"
+            android:background="@drawable/ic_save_background"
+            android:text="@string/sure"/>
+
+
+        <TextView
+            android:id="@+id/modify_cancle_tv"
+            android:layout_width="@dimen/space_110"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_22"
+            android:gravity="center"
+            android:background="@drawable/ic_cancle_background"
+            android:text="@string/cancle"
+            android:layout_alignParentRight="true"/>
+
+        
+    </RelativeLayout>
+
+
+    
+
+</LinearLayout>

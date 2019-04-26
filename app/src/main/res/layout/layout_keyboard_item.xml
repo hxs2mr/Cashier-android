@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.lanzhu.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/space_118"
+    android:layout_height="@dimen/space_76">
+
+    <TextView
+        android:id="@+id/item_key_code_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/space_24"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center"
+        android:background="@drawable/ic_keycode_6b6b6b_bg"/>
+
+</com.lanzhu.autolayout.AutoRelativeLayout>

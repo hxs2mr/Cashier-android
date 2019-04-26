@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_60"
+    android:background="@color/color_ffffff">
+
+
+    <TextView
+        android:id="@+id/item_order_name_tv"
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_300"
+        android:text="@string/cashier_title_name"
+        android:background="@null"
+        android:textSize="@dimen/space_18"/>
+
+    <TextView
+        android:id="@+id/item_order_number_tv"
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_110"
+        android:text="@string/order_title_number"
+        android:background="@null"
+        android:textSize="@dimen/space_18"/>
+
+    <TextView
+        android:id="@+id/item_order_single_tv"
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_100"
+        android:text="@string/order_title_single"
+        android:background="@null"
+        android:textSize="@dimen/space_18"/>
+
+
+    <TextView
+        android:id="@+id/item_order_price_tv"
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_100"
+        android:text="@string/order_title_price"
+        android:background="@null"
+        android:textSize="@dimen/space_18"/>
+
+
+
+</com.lanzhu.autolayout.AutoLinearLayout>

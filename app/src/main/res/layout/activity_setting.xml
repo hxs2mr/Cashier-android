@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+
+    <com.gykj.cashier.widget.HeaderLayoutView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_below="@id/header"
+        android:id="@+id/setting_operate_layout"
+        android:layout_width="@dimen/space_240"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_order_gray_frame_background"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="@dimen/space_5"
+            android:id="@+id/setting_account_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_74"
+            android:textColor="@color/color_0d0d0d"
+            android:textSize="@dimen/space_20"
+            android:gravity="center"
+            android:text="@string/setting_account_manager"/>
+
+        <ImageView
+            style="@style/lay_divide_line_e5e5e5_horizontal" />
+
+        <TextView
+            android:id="@+id/setting_about_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_74"
+            android:textColor="@color/color_0d0d0d"
+            android:textSize="@dimen/space_20"
+            android:gravity="center"
+            android:text="@string/setting_about_we"/>
+
+        <ImageView
+            style="@style/lay_divide_line_e5e5e5_horizontal" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/setting_about_layout"
+        android:layout_toRightOf="@+id/setting_operate_layout"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="invisible">
+        
+        
+        
+        <ImageView
+            android:layout_marginTop="@dimen/space_78"
+            android:layout_width="@dimen/space_116"
+            android:layout_height="@dimen/space_116"
+            android:src="@mipmap/icon_app_logo"
+            android:scaleType="fitXY"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_09c491"
+            android:textSize="@dimen/space_22"
+            android:text="@string/app_name"
+            android:layout_marginTop="@dimen/space_24"/>
+
+
+        <TextView
+            android:id="@+id/setting_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_616161"
+            android:textSize="@dimen/space_18"
+            android:text="@string/app_version_code"
+            android:layout_marginTop="@dimen/space_14"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_2d2d2d"
+                android:textSize="@dimen/space_18"
+                android:text="@string/company_phone"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/space_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_2d2d2d"
+                android:textSize="@dimen/space_18"
+                android:text="@string/company_fax"/>
+            <TextView
+                android:layout_marginTop="@dimen/space_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_2d2d2d"
+                android:textSize="@dimen/space_18"
+                android:text="@string/company_email"/>
+            <TextView
+                android:layout_marginTop="@dimen/space_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_2d2d2d"
+                android:textSize="@dimen/space_18"
+                android:text="@string/company_address"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/setting_account_layout"
+        android:layout_below="@+id/header"
+        android:layout_toRightOf="@+id/setting_operate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/setting_account_name_tv"
+            android:layout_marginTop="@dimen/space_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_24"
+            android:textColor="@color/color_0d0d0d"
+            android:text="@string/account_name"/>
+        
+        
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_40"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_50"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/setting_logout_tv"
+                android:layout_width="@dimen/space_150"
+                android:layout_height="match_parent"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/space_20"
+                android:gravity="center"
+                android:text="@string/app_logout"
+                android:background="@drawable/ic_green_background"/>
+
+            <TextView
+                android:id="@+id/setting_modify_tv"
+                android:layout_marginLeft="@dimen/space_28"
+                android:layout_width="@dimen/space_150"
+                android:layout_height="match_parent"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/space_20"
+                android:gravity="center"
+                android:text="@string/app_modify_password"
+                android:background="@drawable/ic_print_background"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <com.gykj.cashier.widget.HeaderLayoutView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:id="@+id/storage_search_layout"
+        android:layout_below="@+id/header"
+        android:layout_width="@dimen/space_345"
+        android:layout_height="@dimen/space_38"
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_24"
+        android:background="@drawable/ic_seach_layout_background">
+
+
+        <ImageView
+            android:id="@+id/storage_search_iv"
+            android:layout_width="@dimen/space_24"
+            android:layout_height="@dimen/space_24"
+            android:src="@mipmap/icon_search"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_15"/>
+
+
+        <EditText
+            android:id="@+id/storage_search_et"
+            android:background="@null"
+            android:layout_toRightOf="@+id/storage_search_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_b1b1b1"
+            android:hint="@string/cashier_hint_search"
+            android:textSize="@dimen/space_18" />
+
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="match_parent"
+            android:text="@string/search"
+            android:background="@drawable/ic_save_background"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_20"
+            android:gravity="center"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/edit_scan_all_tv"
+        android:layout_width="@dimen/space_120"
+        android:layout_height="@dimen/space_38"
+        android:layout_below="@+id/header"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_30"
+        android:background="@drawable/ic_save_background"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/edit_add_tv"
+        android:text="@string/add_scan_all"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/space_20"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:id="@+id/cashier_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:orientation="horizontal"
+        android:background="@color/color_f2f2f2"
+        android:layout_below="@+id/storage_search_layout"
+        android:layout_marginLeft="@dimen/space_24"
+        android:layout_marginRight="@dimen/space_24"
+        android:layout_marginTop="@dimen/space_24">
+
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_200"
+            android:text="@string/cashier_title_bar_code"/>
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_300"
+            android:text="@string/cashier_title_name"/>
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_200"
+            android:text="@string/storage_number"/>
+
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_210"
+            android:text="@string/storage_time"/>
+
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/storage_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/space_24"
+        android:layout_marginLeft="@dimen/space_24"
+        android:layout_below="@+id/cashier_title_layout"
+        android:layout_above="@+id/cashier_buttom_layout"
+        android:layout_marginBottom="@dimen/space_50">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/storage_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</RelativeLayout>

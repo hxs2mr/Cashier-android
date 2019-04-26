@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+
+    <com.gykj.cashier.widget.HeaderLayoutView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_65"
+        android:layout_marginLeft="@dimen/space_80">
+
+
+        <TextView
+            android:id="@+id/form_code"
+            style="@style/lay_goods_title_textview_style"
+            android:text="@string/goods_code"
+            android:textSize="@dimen/space_20"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/form_code_tv"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_toRightOf="@+id/form_code"
+            android:layout_width="@dimen/space_360"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_gray_textview_background"
+            android:textSize="@dimen/space_18"
+            android:textColor="@color/color_7d7d7d"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_20"/>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_80">
+
+
+        <TextView
+            android:id="@+id/form_name"
+            style="@style/lay_goods_title_textview_style"
+            android:text="@string/goods_name"
+            android:textSize="@dimen/space_20"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/form_name_tv"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_toRightOf="@+id/form_name"
+            android:layout_width="@dimen/space_360"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_gray_textview_background"
+            android:textSize="@dimen/space_18"
+            android:textColor="@color/color_7d7d7d"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_20"/>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_40"
+        android:layout_marginLeft="@dimen/space_80"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+
+        <TextView
+            style="@style/lay_goods_title_textview_style"
+            android:text="@string/form_inventory"
+            android:textSize="@dimen/space_20"
+            android:layout_centerVertical="true"/>
+
+
+        <EditText
+            android:id="@+id/form_inventory_et"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="@dimen/space_90"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_cashier_textview_background"
+            android:textSize="@dimen/space_20"
+            android:gravity="center"
+            android:textColor="@color/color_04b685"
+            android:inputType="number|numberDecimal"/>
+
+
+        <TextView
+            style="@style/lay_goods_title_textview_style"
+            android:text="@string/form_origin"
+            android:textSize="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_40"/>
+
+
+        <TextView
+            android:id="@+id/form_origin_tv"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="@dimen/space_90"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_gray_textview_background"
+            android:textSize="@dimen/space_20"
+            android:textColor="@color/color_0183f1"
+            android:gravity="center"/>
+
+
+        <TextView
+            style="@style/lay_goods_title_textview_style"
+            android:text="@string/form_difference"
+            android:textSize="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_40"/>
+
+
+        <TextView
+            android:id="@+id/form_difference_tv"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="@dimen/space_90"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_gray_textview_background"
+            android:textSize="@dimen/space_20"
+            android:textColor="@color/color_f80000"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/space_50"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/form_save_tv"
+        android:layout_width="@dimen/space_120"
+        android:layout_height="@dimen/space_40"
+        android:background="@drawable/ic_save_background"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/space_20"
+        android:text="@string/save"
+        android:gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_60"
+    android:background="@color/color_ffffff">
+
+
+    <TextView
+        android:id="@+id/item_storage_code_tv"
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_200"
+        android:text="@string/cashier_title_bar_code"
+        android:textSize="@dimen/space_18"/>
+
+    <TextView
+        android:id="@+id/item_storage_name_tv"
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_300"
+        android:text="@string/cashier_title_name"
+        android:textSize="@dimen/space_18"/>
+
+    <TextView
+        android:id="@+id/item_storage_number_tv"
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_200"
+        android:text="@string/storage_number"
+        android:textSize="@dimen/space_18"/>
+
+
+    <TextView
+        android:id="@+id/item_storage_time_tv"
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_210"
+        android:text="@string/storage_time"
+        android:textSize="@dimen/space_18"/>
+
+
+
+
+</com.lanzhu.autolayout.AutoLinearLayout>

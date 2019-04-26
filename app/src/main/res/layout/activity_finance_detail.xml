@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+
+    <com.gykj.cashier.widget.HeaderLayoutView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/finance_billcode_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/space_18"
+        android:textColor="@color/color_0d0d0d"
+        android:text="@string/finance_bill_no"
+        android:layout_margin="@dimen/space_24"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/cashier_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:orientation="horizontal"
+        android:background="@color/color_f2f2f2"
+        android:layout_marginLeft="@dimen/space_24"
+        android:layout_marginRight="@dimen/space_24">
+
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_240"
+            android:text="@string/finance_order_code"/>
+
+
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_160"
+            android:text="@string/finance_goods_num"/>
+
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_160"
+            android:text="@string/finance_goods_money"/>
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_155"
+            android:text="@string/finance_status"/>
+
+        <TextView
+            style="@style/lay_cashier_title_textview_style"
+            android:layout_width="@dimen/space_198"
+            android:text="@string/finance_order_time"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/finance_recyclerview"
+        android:layout_marginLeft="@dimen/space_24"
+        android:layout_marginRight="@dimen/space_24"
+        android:layout_marginBottom="@dimen/space_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

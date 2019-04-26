@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_00000000">
+
+    <RelativeLayout
+        android:layout_width="@dimen/space_640"
+        android:layout_height="@dimen/space_480"
+        android:background="@color/color_ffffff"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/fv_close_iv"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:src="@mipmap/icon_close"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"/>
+
+        <TextView
+            android:id="@+id/fv_title_tv"
+            android:layout_marginTop="@dimen/space_46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_0d0d0d"
+            android:textSize="@dimen/space_30"
+            android:text="@string/fv_title_hint"/>
+        <ImageView
+            android:layout_below="@+id/fv_title_tv"
+            android:layout_marginTop="@dimen/space_32"
+            android:id="@+id/fv_finger_frame_iv"
+            android:layout_width="@dimen/space_120"
+            android:layout_height="@dimen/space_200"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_finger_frame"
+            android:layout_centerHorizontal="true"/>
+
+
+        <ImageView
+            android:layout_marginTop="@dimen/space_80"
+            android:layout_below="@+id/fv_title_tv"
+            android:id="@+id/fv_finger_iv"
+            android:layout_width="@dimen/space_120"
+            android:layout_height="@dimen/space_216"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_finger"
+            android:layout_marginLeft="@dimen/space_300"/>
+
+        <TextView
+            android:id="@+id/fv_data_tv"
+            android:layout_below="@+id/fv_finger_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_50"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_04b685"
+            android:textSize="@dimen/space_36" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

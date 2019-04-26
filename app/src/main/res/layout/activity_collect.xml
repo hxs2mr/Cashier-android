@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+
+    <com.gykj.cashier.widget.HeaderLayoutView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/collect_total_layout"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_84"
+        android:layout_marginTop="@dimen/space_36"
+        android:layout_marginRight="@dimen/space_150"
+        android:layout_marginLeft="@dimen/space_150">
+
+        <TextView
+            android:id="@+id/collect_total_tv"
+            style="@style/lay_cashier_content_textview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cashier_money"
+            android:layout_marginLeft="@dimen/space_30"
+            android:background="@null"/>
+
+
+        <TextView
+            android:layout_below="@+id/collect_total_tv"
+            android:id="@+id/collect_total_money_tv"
+            style="@style/lay_cashier_content_textview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collect_total_money"
+            android:textSize="@dimen/space_30"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@null"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/collect_pay_layout"
+        android:layout_below="@+id/collect_total_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginRight="@dimen/space_150"
+        android:layout_marginLeft="@dimen/space_150"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/collect_balance_tv"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_cash_background"
+            android:gravity="center"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_20"
+            android:text="@string/collect_balance"/>
+
+
+        <TextView
+            android:id="@+id/collect_cashier_tv"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_cash_white_background"
+            android:gravity="center"
+            android:textColor="@color/color_09c491"
+            android:textSize="@dimen/space_20"
+            android:text="@string/collect_casher"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/collect_pay_mode_layout"
+        android:layout_below="@+id/collect_pay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_160"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/space_150"
+        android:layout_marginLeft="@dimen/space_150"
+        android:background="@drawable/ic_cash_white_background">
+
+
+        <RelativeLayout
+            android:id="@+id/collect_vein_layout"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/space_50"
+                android:layout_height="@dimen/space_66"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_vein"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/space_20"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/space_20"
+                android:text="@string/pay_vein"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/lay_divide_line_e5e5e5_vertical"
+            android:layout_marginTop="@dimen/space_40"
+            android:layout_marginBottom="@dimen/space_40"/>
+
+        <RelativeLayout
+            android:id="@+id/collect_face_layout"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/space_50"
+                android:layout_height="@dimen/space_66"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_face"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/space_20"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/space_20"
+                android:text="@string/pay_face"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/lay_divide_line_e5e5e5_vertical"
+            android:layout_marginTop="@dimen/space_40"
+            android:layout_marginBottom="@dimen/space_40"/>
+
+        <RelativeLayout
+            android:id="@+id/collect_password_layout"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/space_50"
+                android:layout_height="@dimen/space_66"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/space_20"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/space_20"
+                android:text="@string/pay_password"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/collect_change_layout"
+        android:layout_below="@+id/collect_pay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_100"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/space_150"
+        android:layout_marginLeft="@dimen/space_150"
+        android:visibility="invisible">
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/collect_cash"
+                style="@style/lay_cashier_content_textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_cash"
+                android:layout_marginLeft="@dimen/space_30"
+                android:background="@null"/>
+
+
+            <TextView
+                android:layout_below="@+id/collect_cash"
+                android:id="@+id/collect_cash_unit"
+                style="@style/lay_cashier_content_textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_total_money"
+                android:textSize="@dimen/space_30"
+                android:layout_marginLeft="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_10"
+                android:textColor="@color/color_f80000"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_below="@+id/collect_cash"
+                android:id="@+id/collect_cash_tv"
+                android:layout_toRightOf="@+id/collect_cash_unit"
+                style="@style/lay_cashier_content_textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_10"
+                android:textColor="@color/color_f80000"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/lay_divide_line_e5e5e5_vertical"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@null"/>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/collect_change"
+                style="@style/lay_cashier_content_textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_change"
+                android:layout_marginLeft="@dimen/space_30"
+                android:background="@null"/>
+
+
+            <TextView
+                android:layout_below="@+id/collect_change"
+                android:id="@+id/collect_change_unit"
+                style="@style/lay_cashier_content_textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_total_money"
+                android:textSize="@dimen/space_30"
+                android:layout_marginLeft="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_10"
+                android:textColor="@color/color_f80000"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_below="@+id/collect_change"
+                android:id="@+id/collect_change_tv"
+                android:layout_toRightOf="@+id/collect_change_unit"
+                style="@style/lay_cashier_content_textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_10"
+                android:textColor="@color/color_f80000"
+                android:background="@null"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/collect_sperate_iv"
+        android:layout_below="@+id/collect_change_layout"
+        style="@style/lay_divide_line_e5e5e5_horizontal"
+        android:contentDescription="@null"
+        android:layout_marginLeft="@dimen/space_150"
+        android:layout_marginRight="@dimen/space_150"
+        android:visibility="invisible"/>
+    
+    
+
+
+
+
+    <com.gykj.cashier.widget.CashKeyboardView
+        android:visibility="invisible"
+        android:id="@+id/collect_key_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_312"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

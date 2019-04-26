@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/space_560"
+    android:layout_height="@dimen/space_400"
+    android:background="@color/color_00000000">
+
+
+    <ImageView
+        android:id="@+id/dialog_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_white_close"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"/>
+
+
+    <LinearLayout
+        android:layout_below="@+id/dialog_close_iv"
+        android:layout_toLeftOf="@+id/dialog_close_iv"
+        android:layout_width="@dimen/space_500"
+        android:layout_height="@dimen/space_360"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space_44"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40">
+
+            <TextView
+                android:id="@+id/dialog_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_40"
+                android:textColor="@color/color_090909"
+                android:textSize="@dimen/space_18"
+                android:text="@string/goods_code"
+                android:layout_centerVertical="true"/>
+
+
+            <TextView
+                android:id="@+id/storage_code_tv"
+                android:layout_toRightOf="@+id/dialog_code"
+                android:layout_width="@dimen/space_330"
+                android:layout_height="match_parent"
+                android:background="@color/color_e4e4e4"
+                android:gravity="center"
+                android:textSize="@dimen/space_18"
+                android:textColor="@color/color_747474"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space_24"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40">
+
+            <TextView
+                android:id="@+id/dialog_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_40"
+                android:textColor="@color/color_090909"
+                android:textSize="@dimen/space_18"
+                android:text="@string/goods_name"
+                android:layout_centerVertical="true"/>
+
+
+            <TextView
+                android:id="@+id/storage_name_tv"
+                android:layout_toRightOf="@+id/dialog_name"
+                android:layout_width="@dimen/space_330"
+                android:layout_height="match_parent"
+                android:background="@color/color_e4e4e4"
+                android:gravity="center"
+                android:textSize="@dimen/space_18"
+                android:textColor="@color/color_747474"/>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space_24"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40">
+
+            <TextView
+                android:id="@+id/dialog_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_40"
+                android:textColor="@color/color_090909"
+                android:textSize="@dimen/space_18"
+                android:text="@string/goods_amount"
+                android:layout_centerVertical="true"/>
+
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/dialog_amount"
+                android:layout_width="@dimen/space_186"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_cashier_textview_background">
+
+                <TextView
+                    android:id="@+id/storage_reduce_tv"
+                    style="@style/lay_cashier_content_textview_style"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="@dimen/space_40"
+                    android:text="@string/cashier_reduce"
+                    android:layout_centerVertical="true" />
+
+
+                <TextView
+                    android:id="@+id/storage_amount_tv"
+                    style="@style/lay_cashier_content_green_textview_style"
+                    android:layout_height="@dimen/space_40"
+                    android:layout_toLeftOf="@+id/storage_pluse_tv"
+                    android:layout_toRightOf="@+id/storage_reduce_tv"
+                    android:layout_centerVertical="true"
+                    android:text="1"
+                    android:textSize="@dimen/space_20"/>
+
+
+                <TextView
+                    android:id="@+id/storage_pluse_tv"
+                    style="@style/lay_cashier_content_textview_style"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="@dimen/space_40"
+                    android:text="@string/cashier_pluse"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+         <RelativeLayout
+             android:layout_marginTop="@dimen/space_24"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/space_50">
+
+             <TextView
+                 android:id="@+id/dialog_operate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/space_40"
+                 android:textColor="@color/color_090909"
+                 android:textSize="@dimen/space_18"
+                 android:text="@string/goods_operate"
+                 android:layout_centerVertical="true"/>
+
+
+             <RadioGroup
+                 android:id="@+id/storage_rg"
+                 android:layout_width="@dimen/space_330"
+                 android:layout_height="match_parent"
+                 android:layout_toRightOf="@+id/dialog_operate"
+                 android:orientation="horizontal">
+
+
+                 <RadioButton
+                     android:id="@+id/storage_add_rb"
+                     android:layout_width="@dimen/space_0"
+                     android:layout_height="@dimen/space_40"
+                     android:layout_weight="1"
+                     android:text="@string/add"
+                     android:checked="true"
+                     android:textColor="@color/color_090909"
+                     android:layout_gravity="center_vertical"/>
+
+
+                 <RadioButton
+                     android:id="@+id/storage_reduce_rb"
+                     android:layout_width="@dimen/space_0"
+                     android:layout_height="@dimen/space_40"
+                     android:layout_weight="1"
+                     android:text="@string/reduce"
+                     android:textColor="@color/color_090909"
+                     android:layout_gravity="center_vertical"/>
+
+             </RadioGroup>
+
+
+         </RelativeLayout>
+        
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginTop="@dimen/space_24">
+
+            <TextView
+                android:id="@+id/storage_save_tv"
+                android:layout_width="@dimen/space_120"
+                android:layout_height="@dimen/space_40"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_save_background"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/space_20"
+                android:text="@string/save"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        
+
+
+    </LinearLayout>
+
+</RelativeLayout>

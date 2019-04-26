@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/icon_login_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+
+    <RelativeLayout
+        android:id="@+id/login_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_74">
+
+
+        <ImageView
+            android:id="@+id/login_company_logo"
+            android:layout_marginLeft="@dimen/space_24"
+            android:layout_width="@dimen/space_74"
+            android:layout_height="@dimen/space_38"
+            android:src="@mipmap/icon_company_logo"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/login_company_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_090909"
+            android:textSize="@dimen/space_18"
+            android:layout_marginLeft="@dimen/space_14"
+            android:layout_centerVertical="true"
+            android:text="@string/company_name"/>
+
+
+        <TextView
+            android:id="@+id/login_version_tv"
+            android:layout_width="@dimen/space_120"
+            android:layout_height="@dimen/space_38"
+            android:background="@drawable/ic_version_background"
+            android:textSize="@dimen/space_14"
+            android:textColor="@color/color_ffffff"
+            android:text="@string/app_version"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_24"
+            android:gravity="center"/>
+
+
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/login_header_layout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_avater_iv"
+        android:layout_marginTop="@dimen/space_32"
+        android:layout_width="@dimen/space_96"
+        android:layout_height="@dimen/space_96"
+        android:src="@mipmap/icon_normal_place_holder"
+        app:civ_border_width="@dimen/space_2"
+        app:civ_border_color="@color/color_ffffff"/>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/space_288"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/login_avater_iv"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/login_username_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/space_288"
+            android:layout_height="@dimen/space_58"
+            android:layout_marginTop="@dimen/space_42"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <EditText
+                android:id="@+id/login_username_et"
+                style="@style/lay_login_edittext_style"
+                android:hint="@string/login_hint_username"
+                android:inputType="text"
+                android:text="13765072164"/>
+
+            <ImageView
+                style="@style/lay_divide_line_horizontal"
+                android:contentDescription="@null"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/login_password_layout"
+            android:layout_width="@dimen/space_288"
+            android:layout_height="@dimen/space_58"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <EditText
+                android:id="@+id/login_password_et"
+                style="@style/lay_login_edittext_style"
+                android:hint="@string/login_hint_password"
+                android:inputType="textPassword"
+                android:text="000000"/>
+
+            <ImageView
+                style="@style/lay_divide_line_horizontal"
+                android:contentDescription="@null"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/login_login_tv"
+            android:layout_width="@dimen/space_288"
+            android:layout_height="@dimen/space_44"
+            android:layout_marginTop="@dimen/space_26"
+            android:background="@drawable/ic_login_btn_background"
+            android:textSize="@dimen/space_24"
+            android:textColor="@color/color_029c70"
+            android:gravity="center"
+            android:text="@string/login_login"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

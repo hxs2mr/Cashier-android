@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_60"
+    android:orientation="horizontal"
+    android:background="@color/color_ffffff">
+
+
+
+
+    <TextView
+        android:id="@+id/cashier_item_code_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_180" />
+
+    <TextView
+        android:id="@+id/cashier_item_name_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_320" />
+
+    <TextView
+        android:id="@+id/cashier_item_single_price_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_82" />
+
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/space_156"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_cashier_textview_background">
+
+        <TextView
+            android:id="@+id/cashier_item_reduce_tv"
+            style="@style/lay_cashier_content_textview_style"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_30"
+            android:text="@string/cashier_reduce"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_30"/>
+
+
+        <TextView
+            android:id="@+id/cashier_item_amount_tv"
+            style="@style/lay_cashier_content_textview_style"
+            android:layout_height="@dimen/space_30"
+            android:layout_toLeftOf="@+id/cashier_item_pluse_tv"
+            android:layout_toRightOf="@+id/cashier_item_reduce_tv"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/cashier_item_pluse_tv"
+            style="@style/lay_cashier_content_textview_style"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_30"
+            android:text="@string/cashier_pluse"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_30"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/cashier_item_total_price_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_90" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_cashier_textview_background">
+
+
+        <ImageView
+            android:id="@+id/cashier_item_delete_iv"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_delete"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+</com.lanzhu.autolayout.AutoLinearLayout>

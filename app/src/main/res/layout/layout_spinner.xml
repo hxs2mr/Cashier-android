@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/space_180"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="@dimen/space_180"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

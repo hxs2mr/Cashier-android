@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/invent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_60"
+    android:orientation="horizontal"
+    android:background="@color/color_ffffff">
+
+
+
+    <TextView
+        android:id="@+id/finance_code_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_174" />
+
+    <TextView
+        android:id="@+id/finance_money_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_110" />
+
+    <TextView
+        android:id="@+id/finance_state_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_110" />
+
+
+    <TextView
+        android:id="@+id/finance_bank_flow_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_230"/>
+
+
+    <TextView
+        android:id="@+id/finance_date_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_150" />
+
+
+    <RelativeLayout
+        style="@style/lay_cashier_content_textview_style">
+
+        <TextView
+            android:id="@+id/finance_operate_tv"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_40"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_save_background"
+            android:text="@string/finance_bill_detail"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_20"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</com.lanzhu.autolayout.AutoLinearLayout>

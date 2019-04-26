@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_order_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_80"
+    android:background="@color/color_f4f4f4">
+
+
+    <TextView
+        android:id="@+id/item_order_code_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_1f1f1f"
+        android:textSize="@dimen/space_18"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_marginLeft="@dimen/space_15"
+        android:text="293192312381231283811" />
+
+
+
+    <TextView
+        android:layout_below="@+id/item_order_code_tv"
+        android:id="@+id/item_order_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_1f1f1f"
+        android:textSize="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_marginLeft="@dimen/space_15"
+        android:text="2018-08-09  12:12:09" />
+
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_15"
+        android:id="@+id/item_order_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_1f1f1f"
+        android:textSize="@dimen/space_28"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_marginLeft="@dimen/space_15"
+        android:text="¥65" />
+
+
+    <ImageView
+        style="@style/lay_divide_line_e5e5e5_horizontal"
+        android:src="@color/color_dbdcdd"
+        android:layout_alignParentBottom="true"/>
+
+</com.lanzhu.autolayout.AutoRelativeLayout>

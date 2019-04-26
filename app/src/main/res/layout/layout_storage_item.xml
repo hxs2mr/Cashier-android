@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/storage_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_60"
+    android:orientation="horizontal"
+    android:background="@color/color_ffffff">
+
+
+
+    <TextView
+        android:id="@+id/storage_bar_code_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_172" />
+
+    <TextView
+        android:id="@+id/storage_name_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_300" />
+
+    <TextView
+        android:id="@+id/storage_kinds_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_100"
+        android:text="@string/storage_title_kinds"/>
+
+
+    <TextView
+        android:id="@+id/storage_status_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_78" />
+
+
+    <TextView
+        android:id="@+id/storage_buying_price_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_104" />
+
+
+    <TextView
+        android:id="@+id/storage_sale_price_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_87" />
+
+    <TextView
+        android:id="@+id/storage_storage_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_68" />
+
+
+
+</com.lanzhu.autolayout.AutoLinearLayout>

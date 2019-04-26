@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/space_210"
+    android:layout_height="@dimen/space_220"
+    android:background="@color/color_ffffff">
+
+
+    <ImageView
+        android:id="@+id/tab_bg_iv"
+        android:layout_marginTop="@dimen/space_45"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_120"
+        android:src="@mipmap/icon_tab_cashier"
+        android:scaleType="fitXY"/>
+
+
+    <TextView
+        android:id="@+id/tab_title_tv"
+        android:layout_below="@+id/tab_bg_iv"
+        android:layout_marginTop="@dimen/space_25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/space_24"
+        android:textColor="@color/color_090909"
+        android:text="@string/tab_cashier"/>
+
+
+</com.lanzhu.autolayout.AutoRelativeLayout>
